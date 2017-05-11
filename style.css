@@ -1,7 +1,11 @@
-/****************************
+
+
+  /****************************
  ====== Votre CSS =====
  ****************************/
+
 *{
+    /*border: 1px solid black;*/
     letter-spacing: 3px;
 }
 
@@ -17,6 +21,10 @@ header {
     list-style: none;
     display: flex;
     flex-direction: row;
+}
+
+.blog{
+    position: absolute;
 }
 
 nav li{
@@ -121,9 +129,12 @@ hr{
 .email{
     margin:10px 0 10px 10px ;
 }
+n;
+}
 
-.submit{
-    background-color: black;
+.headerlist li:hover ul{
+  visibility: visible;
+}
     color:white;
     height:45px;
     width: 120px;
@@ -142,3 +153,92 @@ h5{
     letter-spacing: 1px;
 }
 
+/*CSS PAGE 2*/
+
+.story{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+#txt{
+  text-align: left;
+  width: 85%;
+}
+
+.headerlist li ul{
+  visibility: hidden;
+}
+
+.headerlist li:hover ul{
+  visibility: visible;
+}
+.goats{
+  /*width: 35%;*/
+  border: solid;
+  border-color: #F7F7F7;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+hr{
+  width: 100%;
+  color: #EACCBE;
+}
+
+h1{
+margin-right: auto;
+}
+
+#tagged{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+width: 30%;
+}
+
+#chevre{
+  width: 80%;
+}
+
+#milieu{
+  width: 50%;
+    display:flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 100px;
+}
+
+.pink1{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.pink1 li{
+  margin: 3px;
+
+}
+
+.pink1{
+  margin-left: 20px;
+}
+.a, .b, .c{
+  color: white;
+
+  background-color: #EACCBE;
+  padding-left: 5px;
+
+}
+button{
+  height: 40px;
+  width:100%;
+  text-align: center;
+  background-color: #EACCBE;
+color: white;
+}
