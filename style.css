@@ -1,267 +1,279 @@
 
-
-  /****************************
- ====== Votre CSS =====
- ****************************/
-
-*{
-    /*border: 1px solid black;*/
+/****************************
+      ===== All =====
+****************************/
+  *{
+    /*border: 1px dotted;*/
     letter-spacing: 3px;
-}
-
-header {
+  }
+  body {
+    margin: 0;
+  }
+/****************************
+     ===== Header =====
+****************************/
+  header{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
     margin-bottom: 40px;
-}
-
-.headerlist {
+  }
+  .headerlist{
     list-style: none;
     display: flex;
     flex-direction: row;
-}
+  }
+  .logo-image{
+    width:60%;
+    margin-left: 130px;
+  }
+/**** === Menu === ****/
+  nav ul a{
+    border: 1px solid black;
+    border-top: none;
+    border-right;
+	  display:block;
+    text-decoration: none;
+    margin-left: -9px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    padding-top: 10px;
+    color: black;
+  }
 
-.blog{
-    position: absolute;
-}
-
-nav li{
+  nav li{
+    padding-right: 40px;
     font-family: "Josefin Sans";
-    margin-right: 40px;
-}
+    font-weight:500;
+    font-size: 15px;
+    line-height:30px;
+    color:black;
+    padding-left: -15px;
+  }
+  nav li:hover .sub-menu{
+    display: block;
+  }
 
-h1{
-    font-family: "Arvo";
-    font-weight: lighter;
-    font-size: 35px;
-    text-align: center;
-}
-
-section img{
-    width: 50%;
-}
-
-.one{
+  .sub-menu{
+    position:absolute;
+    display:none;
+    margin-left: -40px;
+    padding-top: 0px;
+  }
+/****************************
+  ===== Main Section =====
+****************************/
+  section img{
+    padding-top: 30px;
+    width: 90%;
+  }
+  .welcome-image{
+    width:50%;
+  }
+  .our-story-image{
+    width:50%;
+  }
+  .welcome-title{
     display:flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 200px;
-}
+  }
 
-footer{
+  h2 {
+    font-family: "Josefin Sans";
+    width: 50%;
+  }
+  .welcome-title hr{
+    background-color: black;
+  }
+  .div-hr {
+    width: 50%;
+  }
+  article {
+    flex: 1;
+  }
+  article ul{
+    padding: 0;
+  }
+  article ul li {
+    margin-bottom: 15px;
+  }
+  ul {
+    list-style: none;
+  }
+  .text-page3{
+    width:95%;
+    margin: auto;
+  }
+  .text-page2{
+    width:50%;
+    margin: auto;
+  }
+  .text-page2 p{
+    text-align: left;
+  }
+  .main-content{
+    text-align: center;
+  }
+/**** === Page 3 === ****/
+  .main-content{
+    width: 50%;
+    box-shadow: 1px 1px 10px #aaa;
+  }
+  .main-content-links {
+    margin:auto;
+    flex-direction: row;
+  }
+  .main-content ul{
+    padding-left: 17px;
+    margin: auto;
+    display: flex;
+    padding-right:5px;
+    color:white;
+  }
+  .main-content li{
+    padding: 5px;
+    background-color: #e1b3a2;
+    margin-right:5px;
+    font-family: "Josefin Sans";
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+  .read-more-button{
+    margin-top: 25px;
+    width:100%;
+    height:40px;
+    background-color: #e1b3a2;
+    color:white;
+    font-family: "Josefin Sans";
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border-style: none;
+  }
+
+  /**** === Page 4 === ****/
+
+  .json {
+    text-align: center;
+    height: 275px;
+  }
+  #zone {
+    border: 1px  solid black;
+    margin:  auto;
+    width: 30%;
+
+  }
+  ul#zone {
+    width: 30%;
+    margin: auto;
+    padding: 0;
+  }
+  #lecture {
+    background-color: #e1b3a2;
+    width : 30%;
+    margin: auto;
+    font-size: 30px;
+    padding-bottom: 30px;
+    font-family: "Josefin Sans";
+    border: 1px solid black;
+  }
+  h1 {
+    font-weight: 600;
+    font-family: "Josefin Sans";
+    width: 30%;
+    margin: auto;
+    text-align: center;
+    border-bottom: solid grey 1px;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+  }
+/****************************
+     ===== Footer =====
+****************************/
+  footer{
+    margin-top: 100px;
     background-color: #F7F7F7;
     padding-top: 50px;
-}
-
-footer ul li{
+  }
+  footer ul li{
     margin-right: 25px;
     letter-spacing: 2px;
-}
-
-footer ul{
+    font-size: 15px;
+    font-weight: bold;
+  }
+  footer ul{
     margin: 30px 0 80px 0;
-}
-
-footer section {
+  }
+  footer section {
     font-family: "Josefin Sans";
     width: 70%;
     margin: auto;
     display: flex;
     flex-direction: row;
     justify-content: center;
-}
+    font-size: 15px;
+    font-weight: bold;
+  }
+  .email, .name{
+    margin:10px 0 10px 10px;
+  }
 
-.center{
-    margin-right: 2%;
-    margin-left: 2%;
-
-}
-
-article {
-    flex: 1;
-}
-
-article ul{
-    padding: 0;
-}
-.listfooter {
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-}
-
-article ul li {
-    margin-bottom: 15px;
-}
-
-
-
-ul {
-    list-style: none;
-}
-
-/*video {
-
-}*/
-
-input{
-    border:none;
-    height: 40px;
-}
-
-form{
-    border:1px solid grey;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    padding: 5px;
-    border-radius: 4px;
-    border-color: #e5e5e5;
-    background-color: grey;
-}
-hr{
+  p, .email{
+    letter-spacing: 1px;
+  }
+  .submit-button{
+    margin-top: 10px;
     background-color: black;
-    margin-bottom: 30px;
-    padding: 0px;
-}
-
-.email{
-    margin:10px 0 10px 10px ;
-}
-n;
-}
-
-.headerlist li:hover ul{
-  visibility: visible;
-}
     color:white;
-    height:45px;
+    height:35px;
     width: 120px;
+    padding-top: 5px;
     border-radius: 4px;
     font-family: "sans-serif","Josefin Sans";
     font-weight: bolder;
-
-}
-
-p, .email{
+  }
+  h5{
+    font-weight: bold;
     letter-spacing: 1px;
-}
+    font-size: 15px;
+  }
+  input{
+    border:none;
+    height: 30px;
+    padding-left: 10px;
+  }
 
-h5{
-    font-weight: normal;
-    letter-spacing: 1px;
-}
 
-/*CSS PAGE 2*/
 
-.story{
-  width: 50%;
-  margin-bottom: 100px;
+  form{
 
-}
-
-.story img{
-  width: 100%;
-}
-
-#txt{
-  text-align: left;
-}
-
-.headerlist li ul{
-  visibility: hidden;
-}
-
-.headerlist li:hover ul{
-  visibility: visible;
-}
-.goats{
-  /*width: 35%;*/
-  border: solid;
-  border-color: #F7F7F7;
-  display:flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 100px;
-}
-
-hr{
-  width: 100%;
-  color: #EACCBE;
-}
-
-h1{
-margin-right: auto;
-}
-
-#tagged{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-width: 30%;
-}
-
-#chevre{
-  width: 80%;
-}
-
-#milieu{
-  width: 50%;
-    display:flex;
-  flex-direction: column;
-  align-items: center;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 100px;
-}
-
-.pink1{
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-}
-
-.pink1 li{
-  margin: 3px;
-
-}
-
-.pink1{
-  margin-left: 20px;
-}
-.a, .b, .c{
-  color: white;
-
-  background-color: #EACCBE;
-  padding-left: 5px;
-
-}
-#formulaire{
-width: auto;
-}
-
-/*#saisie{
-  display: flex;
-  flex-direction: column;
-}*/
-
-/*.email, .nom{
-  height: 20%;
-  width: 40%;
-}
-
-.submit{
-  height: 20%;
-  width: 20%;
-}*/
-button{
-  height: 0px;
-  width:100%;
-  margin-top: 10px;
-  text-align: center;
-  background-color: #EACCBE;
-color: white;
-}
+    border:1px solid grey;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: left;
+    padding: 5px;
+    border-radius: 4px;
+    border-color: #e5e5e5;
+    margin-top: 10px;
+  }
+  hr{
+    background-color: black;
+    margin-bottom: 30px;
+    padding: 0px;
+    margin-top: -15px;
+  }
+  .list-footer {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+  }
+  .center-footer{
+    margin-right: 2%;
+    margin-left: 2%;
+  }
